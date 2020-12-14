@@ -1,0 +1,70 @@
+#container {
+	position: relative;
+	height: 100vh;
+}
+
+#box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-35px, -35px);
+}
+
+.circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	position: absolute;
+	animation-timing-function: ease-in;
+}
+
+.red {
+	background-color: #F63D3A;
+  	animation: changePosition1 2.5s infinite;
+}
+
+.yellow {
+	background-color: #FDA543;
+	top: 35px;
+  	animation: changePosition2 2.5s infinite;
+}
+.green {
+	background-color: #19A68C;
+	left: 35px;
+  	animation: changePosition3 2.5s infinite;
+}
+.blue {
+	background-color: #193B48;
+	left: 35px;
+	top: 35px;
+  	animation: changePosition4 2.5s infinite;
+}
+
+@keyframes changePosition1 {
+	0% {left: 0px; top: 0px;}
+	25% {left: 35px; top: 0px;}
+	50% {top: 35px; left: 35px;}
+	75% {top: 35px; left: 0;}
+	100% {left: 0px; top: 0px;}
+}
+@keyframes changePosition2 {
+	0% {left: 35px; top: 0px;}
+	25% {top: 35px; left: 35px;}
+	50% {top: 35px; left: 0;}
+	75% {left: 0px; top: 0px;}
+	100% {left: 35px; top: 0px;}
+}
+@keyframes changePosition3 {
+	0% {top: 35px; left: 35px;}
+	25% {top: 35px; left: 0;}
+	50% {left: 0px; top: 0px;}
+	75% {left: 35px; top: 0px;}
+	100% {top: 35px; left: 35px;}
+}
+@keyframes changePosition4 {
+	0% {top: 35px; left: 0;}
+	25% {left: 0px; top: 0px;}
+	50% {top: 0px; left: 35px;}
+	75% {left: 35px; top: 35px;}
+	100% {top: 35px; left: 0;}
+}
