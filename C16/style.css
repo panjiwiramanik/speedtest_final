@@ -1,0 +1,110 @@
+.container {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#head {
+	margin-bottom: 20px;
+}
+
+.leftEye, .rightEye, .mouth, .face {
+	transition: all .5s;
+}
+
+.face {
+	width: 400px;
+	height: 400px;
+	border-radius: 50%;
+	position: relative;
+	margin: 0 auto;
+}
+
+.leftEye {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	position: absolute;
+	left: 90px;
+	top: 120px;
+}
+
+.rightEye {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	position: absolute;
+	right: 90px;
+	top: 120px;
+}
+
+.mouth {
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	width: 210px;
+	height: 70px;
+}
+
+.mouthTop {
+	z-index: 999;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	width: 210px;
+	height: 32px;
+}
+
+.flat .face {
+	background-color: #EED16B;
+	border: 30px solid #DAAD50;
+}
+
+.flat .mouth {
+	border-radius: 50px;
+}
+
+.flat .leftEye, .flat .rightEye, .flat .mouth {
+	background-color: #DAAD50;
+}
+
+.happy .face {
+	background-color: #A9DB7A;
+	border: 30px solid #8EC567;
+}
+
+.happy .leftEye, .happy .rightEye {
+	background-color: #8EC567;
+}
+
+.happy .mouthTop {
+	background-color: #A9DB7A;
+}
+
+.happy .mouth {
+	background-color: #8EC567;
+	border-radius: 100%;
+}
+
+.sad .face {
+	background-color: #ee9295;
+	border: 30px solid #e17379;
+}
+
+.sad .leftEye, .sad .rightEye {
+	background-color: #e17379;
+}
+
+.sad .mouth {
+	border-radius: 100%;
+	background-color: #e17379;
+}
+
+.sad .mouthTop {
+	background-color: #ee9295;
+	height: 40px;
+	top: 285px;
+}
+
+.buttons {
+	text-align: center;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>C16</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<div id="head" class="happy">
+			<div class="face">
+				<div class="leftEye"></div>
+				<div class="rightEye"></div>
+				<div class="mouthTop"></div>
+				<div class="mouth"></div>
+			</div>
+		</div>
+		<div class="buttons">
+			<button id="happy" onclick="change('happy')">:)</button>
+			<button id="flat" onclick="change('flat')">:|</button>
+			<button id="sad" onclick="change('sad')">:(</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function change(type) {
+			let head = document.getElementById('head');
+			head.className = type;
+		}
+	</script>
+</body>
+</html>
